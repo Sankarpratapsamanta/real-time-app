@@ -1,0 +1,23 @@
+{
+  "name": "real-time-graph",
+  "version": "1.0.0",
+  "description": "Road safety Analytics",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run client\""
+  },
+  "author": "sankar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3",
+    "socket.io": "^2.3.0"
+  }
+}
